@@ -27,7 +27,7 @@ nav[class*="-guilds "] {
     defs, 
     [class*="-blobContainer"],
     [class*="-listItemWrapper"],
-    [class*="-wrapper"]:not([class*="-listItem"] > [class*="-wrapper"]),
+    [class*="-wrapper"],
     [class*="-tutorialContainer"] [class*="-wrapper"],
     svg[class*="-placeholderMask"],
     svg:not([class*="-placeholderMask"]) > foreignObject {
