@@ -12,7 +12,7 @@
     );
 }
 
-nav[class*="-guilds "] {
+nav[class*="-guilds"] {
     /* Uncomment if you changed up your nameplate */
     /* margin: 0;
     [class*="sidebar_"]::after {
@@ -58,17 +58,12 @@ nav[class*="-guilds "] {
 
     [class*="-childWrapper"],
     [class*="-childWrapper"] img,
-    [class*="-icon"],
+    img[class*="-icon"], [class*="-folderPreviewGuildIcon"], /* allat cause of -iconBadge */
     [class*="-circleIconButton"] {
         border-radius: 50% !important;
         transition: border-radius 150ms linear;
-    }
 
-    [class*="-selected"] {
-        [class*="-childWrapper"],
-        [class*="-childWrapper"] img,
-        [class*="-icon"],
-        &[class*="-circleIconButton"] {
+        [class*="-selected"] &, &[class*="-selected"] {
             border-radius: 27% !important;
         }
     }
